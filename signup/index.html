@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Sign Up | Forumle</title>
+    <link rel="stylesheet" href="https://forumle.guessoword.com/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Inter&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  </head>
+  <center><body>
+    <div class="bubble-container">
+      <div class="bubble pink"></div>
+      <div class="bubble blue"></div>
+      <div class="bubble pink"></div>
+      <div class="bubble blue"></div>
+      <div class="bubble pink"></div>
+      <div class="bubble blue"></div>
+      <div class="bubble pink"></div>
+      <div class="bubble pink"></div>
+      <div class="bubble blue"></div>
+      <div class="bubble pink"></div>
+      <div class="bubble blue"></div>
+      <div class="bubble pink"></div>
+      <div class="bubble blue"></div>
+      <div class="bubble pink"></div>
+    </div>
+    <h1>Forumle</h1>
+    <footer>By <a href="https://savirsingh.github.io">Savir</a></footer><br>
+    <div class="form-container">
+      <div class="tab">
+        <button class="tablinks active" onclick="openForm(event, 'personal')">Personal</button>
+        <button class="tablinks" onclick="openForm(event, 'business')">Business</button>
+      </div>
+
+      <form id="personal" class="tabcontent" style="display:block;">
+        <h2>Join Forumle and connect with others who have similar interests.</h2>
+        <input type="text" placeholder="Username">
+        <input type="email" placeholder="Email Address">
+        <input type="password" placeholder="Password">
+        <p>By signing up, you agree to our <a href="/legal/terms">Terms of Use</a> and <a href="/legal/privacy">Privacy Policy</a>.</p>
+        <button type="submit">Join Forumle</button>
+      </form>
+
+      <form id="business" class="tabcontent" style="display:none;">
+        <h2>Make your business efficient using Forumle's vast but simple-to-use features.</h2>
+        <input type="text" placeholder="Username">
+        <input type="email" placeholder="Email Address">
+        <input type="text" placeholder="Company Name">
+        <input type="password" placeholder="Pin (if you aren't the forum creator)">
+        <input type="password" placeholder="Password">
+        <p>The company pin is only required if you are joining the business forum. If you're creating it, please leave the field blank.</p>
+        <p>By signing up, you agree to our <a href="/legal/terms">Terms of Use</a> and <a href="/legal/privacy">Privacy Policy</a>.</p>
+        <button type="submit">Join Forumle</button>
+      </form>
+    </div>
+    <script>
+      function openForm(evt, formName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(formName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+    </script>
+  </body></center>
+</html>
