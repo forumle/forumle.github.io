@@ -37,7 +37,7 @@
         <button class="tablinks" onclick="openForm(event, 'business')">Business</button>
       </div>
 
-      <form id="personal" class="tabcontent" style="display:block;">
+      <form method="POST" action="https://forumle.pythonanywhere.com/signup/submit" id="personal" class="tabcontent" style="display:block;">
         <h2>Join Forumle and connect with others who have similar interests.</h2>
         <input name="username" type="text" placeholder="Username">
         <input name="email" type="email" placeholder="Email Address">
@@ -46,7 +46,7 @@
         <button type="submit">Join Forumle</button>
       </form>
 
-      <form method="POST" action="https://forumle.pythonanywhere.com/login" id="business" class="tabcontent" style="display:none;">
+      <form method="POST" action="https://forumle.pythonanywhere.com/signup/business/submit" id="business" class="tabcontent" style="display:none;">
         <h2>Make your business efficient using Forumle's vast but simple-to-use features.</h2>
         <input name="username" type="text" placeholder="Username">
         <input name="email" type="email" placeholder="Email Address">
