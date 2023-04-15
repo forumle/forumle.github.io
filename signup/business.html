@@ -37,21 +37,21 @@
         <button class="tablinks active" onclick="openForm(event, 'business')">Business</button>
       </div>
 
-      <form id="personal" class="tabcontent" style="display:none;">
+      <form method="POST" action="https://forumle.pythonanywhere.com/signup/submit" id="personal" class="tabcontent" style="display:none;">
         <h2>Join Forumle and connect with others who have similar interests.</h2>
-        <input type="text" placeholder="Username">
-        <input type="email" placeholder="Email Address">
-        <input type="password" placeholder="Password">
+        <input name="username" type="text" placeholder="Username">
+        <input name="email" type="email" placeholder="Email Address">
+        <input name="pw" type="password" placeholder="Password">
         <p>By signing up, you agree to our <a href="/legal/terms">Terms of Use</a> and <a href="/legal/privacy">Privacy Policy</a>.</p>
         <button type="submit">Join Forumle</button>
       </form>
 
-      <form id="business" class="tabcontent" style="display:block;">
+      <form method="POST" action="https://forumle.pythonanywhere.com/signup/business/submit" id="business" class="tabcontent" style="display:block;">
         <h2>Make your business efficient using Forumle's vast but simple-to-use features.</h2>
-        <input type="text" placeholder="Username">
-        <input type="email" placeholder="Email Address">
-        <input type="text" placeholder="Company Name">
-        <input type="password" placeholder="Password">
+        <input name="username" type="text" placeholder="Username">
+        <input name="email" type="email" placeholder="Email Address">
+        <input name="org" type="text" placeholder="Company Name">
+        <input name="pw" type="password" placeholder="Password">
         <p>By signing up, you agree to our <a href="/legal/terms">Terms of Use</a> and <a href="/legal/privacy">Privacy Policy</a>.</p>
         <button type="submit">Join Forumle</button>
       </form>
